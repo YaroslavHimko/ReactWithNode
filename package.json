@@ -9,7 +9,7 @@
   },
   "scripts": {
     "install": "cd server",
-    "start": "ode index.js"
+    "start": "node index.js"
   },
   "author": "Yaroslav Himko",
   "license": "ISC",
