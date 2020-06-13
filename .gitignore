@@ -103,8 +103,11 @@ dist
 # TernJS port file
 .tern-port
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 # Config files
 dev.js
 >>>>>>> 5d34f64d743067707bbe74cdc5def953427201ac
+=======
+>>>>>>> 0d33419d429edebcb7a7d2ef740d4a6f11e4d9e2
