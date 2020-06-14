@@ -4,15 +4,15 @@
   "description": "",
   "main": "index.js",
   "engines": {
-    "node": "12.16.2",
-    "npm": "6.14.4"
+    "node": "12.14.1",
+    "npm": "5.0.3"
   },
   "scripts": {
     "start": "node index.js",
     "server": "nodemon index.js",
     "client": "npm run start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix clientgit "
   },
   "author": "Yaroslav Himko",
   "license": "ISC",
