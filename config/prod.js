@@ -9,5 +9,7 @@ module.exports = {
   mailerKey: process.env.MAILER_KEY,
   emailFromAddress: process.env.EMAIL_FROM_ADDRESS,
   emailPassword: process.env.EMAIL_PASSWORD,
+  mailgunApiKey: process.env.MAILGUN_API_KEY,
+  mailgunDomain: process.env.MAILGUN_DOMAIN,
   redirectDomain: process.env.REDIRECT_DOMAIN
 };
