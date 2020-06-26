@@ -22,13 +22,10 @@ class Mailer {
 
   async send() {
     const response = this.transporter.sendMail(this.data, function (
-      error,
-      info
+      error
     ) {
       if (error) {
         console.log(error);
-      } else {
-        console.log("Email sent: " + info.response);
       }
     });
     return response;
