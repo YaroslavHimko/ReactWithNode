@@ -22,7 +22,7 @@ module.exports = (app) => {
   });
 
   app.post("/api/surveys/webhooks", (req, res) => {
-    const p = new Path("/api/surveys/:surveyId/:choice");
+    const p = new Path("//api/surveys/:surveyId/:choice");
     const { signature, "event-data": eventData } = req.body;
 
     _.chain(eventData)
