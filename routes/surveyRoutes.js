@@ -17,10 +17,16 @@ module.exports = (app) => {
     res.send(surveys);
   });
 
+  //TODO
+  //Double slashes can't work on localhost
+  //Find a way to remote slash at the end of heroku address
   app.get("//api/surveys/:surveyId/:choice", (req, res) => {
     res.send("Thanks for voting!");
   });
 
+
+  //TODO
+  //Same double-slash issue
   app.post("/api/surveys/webhooks", (req, res) => {
     const p = new Path("//api/surveys/:surveyId/:choice");
     const { signature, "event-data": eventData } = req.body;
